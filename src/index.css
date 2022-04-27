@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-700 text-slate-300;
+  }
+}
+
+@layer utilities {
+  .underline-link {
+    @apply text-purple-400 hover:text-purple-600 border-b-2 border-b-purple-400 hover:border-b-purple-600 hover:border-b-2 transition-all duration-300;
+  }
+
+  .input-base {
+    @apply text-slate-700 my-2 rounded-md p-2 font-bold placeholder:font-bold;
+  }
+}
+
+.CodeMirror {
+  @apply text-xl min-h-screen;
+}
